@@ -1,0 +1,271 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800|Roboto+Slab:400,100,300,700);
+body {
+    font-family: "Roboto Slab", sans-serif;
+    font-weight: 300;
+    font-size: 2em;
+    position: relative;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 100;
+    margin: 0px;
+}
+
+
+/** Header Navigation **/
+
+header .navbar {
+    padding: 30px 0px;
+    transition: all .5s ease-out;
+}
+
+header .navbar-default {
+    background-color: transparent;
+    border: none;
+}
+
+header .navbar-default .navbar-nav a {
+    color: white;
+    padding: 5px 8px;
+}
+
+header .navbar-default .navbar-nav a:hover {
+    color: #EEC856;
+}
+
+header .navbar-default .navbar-nav .active a {
+    font-weight: 700;
+    color: #EEC856;
+    background-color: transparent;
+    border-bottom: 4px solid #eec856;
+    text-shadow: none;
+}
+
+header .navbar-default .navbar-nav .active a:hover {
+    color: #e15d5f;
+    background: transparent;
+    text-shadow: none;
+}
+
+header .navbar-brand h1 {
+    color: white;
+    margin: 0px;
+    font-size: 1.8em;
+    font-weight: 400;
+    padding-left: 105px;
+}
+
+header .navbar-brand span.subhead {
+    font-family: "Roboto Slab", sans-serif;
+    font-size: 0.6em;
+    font-weight: 100;
+    display: block;
+}
+
+
+/** Navbar brand **/
+
+header .navbar-brand {
+    background: ;
+    background-repeat: no-repeat;
+    background-position: 15px 0;
+    height: auto;
+}
+
+
+/** Navbar Toggle **/
+
+header .navbar-toggle {
+    background-color: #279182;
+}
+
+header .navbar-default .navbar-toggle .icon-bar {
+    background-color: white;
+}
+
+@media only screen and (max-width:768px) {
+    header .navbar-collapse.in {
+        background-color: rgba(0, 0, 0, .5);
+    }
+}
+
+
+/** Navbar inbody **/
+
+header .inbody {
+    background: rgba(104, 73, 49, .9);
+}
+
+header .navbar.inbody {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+header .navbar.inbody .navbar-nav {
+    padding-top: 10px;
+}
+
+header .inbody .navbar-brand {
+    background-size: 43px;
+    backgrogund-position: top left;
+    margin-top: 5px;
+    padding-bottom: 0;
+    margin-left: 10px;
+}
+
+header .inbody .navbar-brand h1 {
+    font-size: 1.1em;
+    padding-left: 38px;
+}
+
+header .inbody .navbar-brand sapn.subhead {
+    display: none;
+}
+
+
+/** Page **/
+
+.page {
+    padding: 50px 0px;
+}
+
+.page h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#aboutme {
+    background-color: #e4d29d;
+    background-image: linear-gradient(to bottom, #eef08a, #819a2d);
+    border-top: 20px solid rgba(238, 200, 86, .5);
+}
+
+.education {
+    margin: 20px 0;
+    text-align: center;
+}
+
+#educations img.icon {
+    display: block;
+    width: 80px;
+    margin: 0 auto;
+    margin-bottom: 5px;
+}
+
+#educations h3 {
+    margin-bottom: 10px;
+}
+
+@media only screen and(min-width:450px) and(max-width:768px) {
+    .education p {
+        padding: 0 20%;
+    }
+}
+
+
+/** Page staff **/
+
+#staff {
+    background-color: #e4d29d;
+    background-image: linear-gradient(to bottom, #4d29d, #cdae50);
+}
+
+.doctor {
+    margin: 10px 0;
+}
+
+.doctor h3 {
+    font-weight: 600;
+    font-size: 1.2em;
+    color: #6f4e36;
+    padding-bottom: 5px;
+}
+
+.doctor p {
+    font-size: .8em;
+}
+
+.doctor img {
+    width: 100%;
+}
+
+
+/** Page Testimonials **/
+
+#testimonials {
+    padding: 0;
+}
+
+#testimonials h2 {
+    display: none;
+}
+
+#testimonials blockquote {
+    background-color: rgba(255, 255, 255, .6);
+    margin: 0;
+    border-left: none;
+    min-height: 500px;
+    position: relative;
+}
+
+#testimonials blockquote .quote {
+    background-color: rgba(255, 255, 255, .6);
+    padding: 20px 5%;
+    position: absolute;
+    bottom: 0;
+    width: 75%;
+    font-weight: 400;
+    border-radius: 0 50px 0 0;
+}
+
+#testimonials blockquote .quote:hover {
+    background-color: rgba(239, 240, 196, .9);
+}
+
+
+/** Footer **/
+
+footer {
+    background: #586d74;
+    color: white;
+    font-size: .8em;
+    padding: 20px 0 40px 0;
+}
+
+footer a {
+    color: #e06eae;
+}
+
+footer a:hover {
+    color: #eec856 !important;
+}
+
+footer .navbar {
+    margin-bottom: 0;
+    min-height: 0;
+}
+
+footer .navbar-default {
+    background: transparent;
+    border: none;
+    margin-right: 40px;
+}
+
+footer .navbar-nav>li a {
+    padding-top: 0;
+    padding-bottom: 0;
+    text-decoration: underline;
+    color: #eec856 !important;
+}
+
+footer .phone {
+    font-size: 1.4em;
+    font-weight: 700;
+    color: #e06ae;
+}
