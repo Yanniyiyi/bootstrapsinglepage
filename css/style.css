@@ -183,13 +183,13 @@ header .inbody .navbar-brand sapn.subhead {
     margin: 10px auto;
 }
 a.ghost {
-    position: absolute;
+    margin-top:200px;
     font-family: "Roboto Slab", sans-serif;
     color: white;
     border: 1px solid #f5f5f5;
     display: block;
     left: 43%;
-    margin-top:200px;
+   
     padding:10px;
     text-align: center;
     text-decoration: none;
