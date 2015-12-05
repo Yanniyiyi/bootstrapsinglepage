@@ -72,15 +72,10 @@ header .navbar-brand span.subhead {
 /** Navbar brand **/
 
 header .navbar-brand {
-    background: ;
+    background: url(../img/logo.png);
     background-repeat: no-repeat;
     background-position: 15px 0;
     height: auto;
-}
-
-header .navbar-brand img{
-    max-width: 185px;
-    max-height: 400px;
 }
 
 
@@ -133,47 +128,81 @@ header .inbody .navbar-brand sapn.subhead {
     display: none;
 }
 
+
 /** Video background **/
-.content-section .video-section{
-    max-height: 650px;
+
+.content-section .video-section {
+    max-height: 500px;
     padding: 110px 0 32px;
-    }
+    position: relative;
+}
 
 .video-section .pattern-overlay {
-background-color: rgba(71, 71, 71, 0.59);
-padding: 110px 0 32px;
-min-height: 710px;
+    background-color: rgba(71, 71, 71, 0.59);
+    padding: 110px 0 32px;
+    min-height: 712px;
+    /* Incase of overlay problems just increase the min-height*/
+}
 
-/* Incase of overlay problems just increase the min-height*/
+.video-section h2,
+.video-section h3 {
+    text-align: center;
+    color: #fff;
 }
-.video-section h2, .video-section h3{
-text-align:center;
-color:#fff;
+
+.video-section h2 {
+    font-family: 'Roboto Slab', serif;
+    margin: 40px auto 0px;
 }
-.video-section h2{
-font-size:110px;
-font-family: 'Buenard', serif;
-font-weight:bold;
-text-transform: uppercase;
-margin: 40px auto 0px;
-text-shadow: 1px 1px 1px #000;
--webkit-text-shadow: 1px 1px 1px #000;
--moz-text-shadow: 1px 1px 1px #000;
+
+.video-section strong {
+    font-family: 'Roboto Slab', serif;
+    font-weight: bolder;
+    margin: 40px auto 0px;
 }
-.video-section h3{
-font-size: 25px;
-font-weight:lighter;
-margin: 0px auto 15px;
+
+.video-section h3 {
+    font-weight: lighter;
+    font-family: 'Roboto Slab', serif;
+    margin: 0px auto 15px;
 }
-.video-section .buttonBar{display:none;}
-.player {font-size: 1px;}
+
+.video-section .buttonBar {
+    display: none;
+}
+
+.player {
+    font-size: 1px;
+}
 
 .divider {
-    background-image:url(../img/divider.png);
-    display:block;
-    width:300px;
-    height:35px;
-    margin:10px auto
+    background-image: url(../img/divider.png);
+    display: block;
+    width: 300px;
+    height: 35px;
+    margin: 10px auto;
+}
+a.ghost {
+    position: absolute;
+    font-family: "Roboto Slab", sans-serif;
+    color: white;
+    border: 1px solid #f5f5f5;
+    display: block;
+    left: 43%;
+    margin-top:200px;
+    padding:10px;
+    text-align: center;
+    text-decoration: none;
+    -webkit-transition: color 0.3s ease-out, background-color 0.3s ease-out;
+    transition: color 0.3s ease-out, background-color 0.3s ease-out;
+}
+
+a.ghost:hover,
+a.ghost:focus {
+    background-color: rgba(255, 255, 255, .2);
+    color: #000;
+    transition: color 0.3s ease-in, background-color 0.3s ease-in;
+    -webkit-transition: color 0.3s ease-in, background-color 0.3s ease-in;
 }
 
 
