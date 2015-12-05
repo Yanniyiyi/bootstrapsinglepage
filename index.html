@@ -26,7 +26,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href=""><h1>Wisdom <span class="subhead">Pet asdf</span></h1></a>
+                    <a class="navbar-brand" href=""><img src="img/logo.png" alt="Yi Yang"></a>
                 </div>
                 <!-- navbar-header -->
                 <div id="collapse" class="collapse navbar-collapse">
@@ -38,13 +38,13 @@
                             <a href="#aboutme">About me</a>
                         </li>
                         <li>
-                            <a href="#education">Education</a>
+                            <a href="#educations">Education</a>
                         </li>
                         <li>
-                            <a href="#project">Project</a>
+                            <a href="#projects">Project</a>
                         </li>
                         <li>
-                            <a href="">Contact</a>
+                            <a href="#contact">Contact</a>
                         </li>
                     </ul>
                 </div>
@@ -54,36 +54,22 @@
 
         </nav>
 
-        <div class="carousel slide" data-ride="carousel" id="featured">
-            <div class="carousel-inner">
-                <div class="item active">
-                    <img src="http://placehold.it/350x150">
-                </div>
-                <div class="item">
-                    <img src="http://placehold.it/350x150">
-                </div>
-                <div class="item">
-                    <img src="http://placehold.it/350x150">
-                </div>
-                <div class="item">
-                    <img src="http://placehold.it/350x150">
-                </div>
-                <div class="item">
-                    <img src="http://placehold.it/350x150">
+        <div class="content-section video-section">
+            <div class="pattern-overlay container-fluid">
+                 <div class="row">
+                        <div class="col-lg-12">
+                            <a id="bgndVideo" class="player" data-property="{videoURL:'https://www.youtube.com/watch?v=43ngkc2Ejgw',containment:'.video-section', quality:'large', autoPlay:true, mute:true, opacity:1}">bg</a>
+                            <h2>Welcome</h2>
+                            <div class="divider"></div>
+                            <h3>It's nice to meet you</h3>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <!-- carousel-inner -->
-
-            <a class="left carousel-control" href="#featured" role="button" data-slide="prev">
-                <span class="glyphicon glyphicon-chevron-left"></span>
-            </a>
-            <a class="right carousel-control" href="#featured" role="button" data-slide="next">
-                <span class="glyphicon glyphicon-chevron-right"></span>
-            </a>
         </div>
-        <!-- carousel slide -->
     </header>
     <div class="main">
+
         <div class="page" id="aboutme">
             <div class="content container">
                 <h2>About me</h2>
@@ -100,21 +86,16 @@
 
         <div class="page" id="educations">
             <div class="content container">
-                <h2></h2>
+                <h2>Education</h2>
                 <div class="row">
-                    <article class="education col-md-4 col-sm-6 col-xs-12">
+                    <article class="education col-md-6 col-sm-6 col-xs-12">
                         <img src="" alt="">
                         <h3>Monash University(2014-2015)</h3>
-                        <p>I did my master degree in Monash University. During those two years study, I found what I want to do in the future - be a developer.</p>
-                    </article>
-                    <article class="education col-md-4 col-sm-6 col-xs-12">
-                        <img src="" alt="">
-                        <h3></h3>
                         <p></p>
                     </article>
-                    <article class="education col-md-4 col-sm-6 col-xs-12">
+                    <article class="education col-md-6 col-sm-6 col-xs-12">
                         <img src="" alt="">
-                        <h3></h3>
+                        <h3>Chang'an University(2009-2013)</h3>
                         <p></p>
                     </article>
                 </div>
@@ -229,12 +210,14 @@
         <!-- content container -->
     </footer>
 </body>
-   
+
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+<script src="js/jquery.mb.YTPlayer.js"></script>
 
 <script src="js/myscript.js"></script>
 
