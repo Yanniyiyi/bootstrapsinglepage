@@ -8,6 +8,8 @@
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 
+    <link rel="stylesheet" href="css/animate.css">
+
     <link rel="stylesheet" href="css/style.css">
     <script src="js/prefixfree.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -41,7 +43,7 @@
                             <a href="#educations">Education</a>
                         </li>
                         <li>
-                            <a href="#projects">Project</a>
+                            <a href="#projects">Projects</a>
                         </li>
                         <li>
                             <a href="#contact">Contact</a>
@@ -59,28 +61,36 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <a id="bgndVideo" class="player" data-property="{videoURL:'https://www.youtube.com/watch?v=43ngkc2Ejgw',containment:'.video-section', quality:'large', autoPlay:true, mute:true, opacity:1}">bg</a>
-                        <h2><strong class="greeting">
+                        <h2 class="header-content"><strong class="greeting">
                             Hi, </strong>I’m Yi Yang. It's nice to meet you.</h2>
-                        <div class="divider"></div>
-                        <h3>I like to Code and I am looking for a job now.</h3>
+                        <div class="divider header-content"></div>
+                        <h3 class="header-content">I like to Code and I am looking for a job now.</h3>
                         <div class="row">
-                            <div class="col-md-2 col-md-offset-5"><a href="#aboutme" class="ghost">Want to hire me?</a></div>
+                            <div class="col-md-2 col-md-offset-5 col-sm-6 col-sm-offset-3 col-xs-6 col-xs-offset-3"><a href="#aboutme" class="ghost header-content">Hire me?</a></div>
                         </div>
 
                     </div>
                 </div>
             </div>
         </div>
-        </div>
+
     </header>
     <div class="main">
 
-        <div class="page" id="aboutme">
+        <div class="page " id="aboutme">
             <div class="content container">
                 <h2>About me</h2>
                 <div class="row">
-                    <p class="col-md-5 col-md-offset-1">Hi, I am Yi Yang.</p>
-                    <p class="col-md-5"></p>
+                    <p class="col-md-5 col-md-offset-1"></p>
+                    <p class="col-md-5">Hi, I am Yi Yang, a graduate of Monash University.</p>
+                </div>
+                <div class="row">
+                    <p class="col-md-5 col-md-offset-1"></p>
+                    <p class="col-md-5">Hi, I am Yi Yang, a graduate of Monash University.</p>
+                </div>
+                <div class="row">
+                    <p class="col-md-5 col-md-offset-1"></p>
+                    <p class="col-md-5">Hi, I am Yi Yang, a graduate of Monash University.</p>
                 </div>
 
 
@@ -93,14 +103,23 @@
             <div class="content container">
                 <h2>Education</h2>
                 <div class="row">
-                    <article class="education col-md-6 col-sm-6 col-xs-12">
+                    <article class="element-to-animate animated education col-md-6 col-sm-6 col-xs-12">
                         <img src="" alt="">
-                        <h3>Monash University(2014-2015)</h3>
+                        <h1>Monash University(2014-2015)</h1>
+                        <h3>What I got:</h3>
+                        <ul>
+                            <li>Faculty of Information Technology International Merit Scholarship</li>
+                            <li>Highest result in Java foundation unit</li>
+                        </ul>
                         <p></p>
                     </article>
-                    <article class="education col-md-6 col-sm-6 col-xs-12">
+                    <article class="education col-md-6 col-sm-6 col-xs-12 element-to-animate animated">
                         <img src="" alt="">
-                        <h3>Chang'an University(2009-2013)</h3>
+                        <h1>Chang'an University(2009-2013)</h1>
+                        <h3>What I did:</h3>
+                        <ul>
+                            <li>Class monitor for 4 years</li>
+                        </ul>
                         <p></p>
                     </article>
                 </div>
@@ -111,58 +130,69 @@
         </div>
         <!--service page-->
 
-        <div id="staff" class="page">
+        <div id="projects" class="page">
             <div class="content container-fluid">
-                <h2 id="ourstaff"></h2>
+                <h2 id="myprojects">Recent works</h2>
                 <div class="row">
-                    <div class="doctor col-lg-4">
-                        <div class="row">
-                            <div class="photo col-xs-6 col-xs-offset-3 col-sm-3 col-sm-offset-1 col-md-2 col-md-offset-2 col-lg-4 col-lg-offset-0">
-                                <img src="" alt="">
+                    <div class="col-md-6">
+                        <div class="image-wrapper overlay-fade-in">
+
+                            <img src="img/moving.jpg" />
+
+                            <div class="image-overlay-content">
+                                <h2 class="price">Moving Materials</h2>
+                                <a href="https://movingmaterial.azurewebsites.net/" class="button" target="_blank">Have a look</a>
                             </div>
-                            <div class="info col-xs-8 col-xs-offset-2 col-sm-7 col-sm-offset-0 col-md-6 col-lg-8">
-                                <h3></h3>
-                                <p></p>
-                            </div>
+
                         </div>
-                        <!-- inner row -->
                     </div>
-                    <!-- doctor -->
-                    <div class="doctor col-lg-4">
-                        <div class="row">
-                            <div class="photo col-xs-6 col-xs-offset-3 col-sm-3 col-sm-offset-1 col-md-2 col-md-offset-2 col-lg-4 col-lg-offset-0">
-                                <img src="" alt="">
+                    <div class="col-md-6">
+                        <div class="image-wrapper overlay-fade-in">
+
+                            <img src="img/etalk.jpg" />
+
+                            <div class="image-overlay-content">
+                                <h2 class="price">Etalk(Android)</h2>
+                                <a href="http://www.etalk365.com/etalk/download.jsp" class="button" target="_blank">Have a look</a>
                             </div>
-                            <div class="info col-xs-8 col-xs-offset-2 col-sm-7 col-sm-offset-0 col-md-6 col-lg-8">
-                                <h3></h3>
-                                <p></p>
-                            </div>
+
                         </div>
-                        <!-- inner row -->
                     </div>
-                    <!-- doctor -->
-                    <div class="doctor col-lg-4">
-                        <div class="row">
-                            <div class="photo col-xs-6 col-xs-offset-3 col-sm-3 col-sm-offset-1 col-md-2 col-md-offset-2 col-lg-4 col-lg-offset-0">
-                                <img src="" alt="">
+                    <div class="col-md-6">
+                        <div class="image-wrapper overlay-fade-in">
+
+                            <img src="img/portfolio.jpg" />
+
+                            <div class="image-overlay-content">
+                                <h2>My portfolio</h2>
+                                <p class="price">You are visiting now</p>
                             </div>
-                            <div class="info col-xs-8 col-xs-offset-2 col-sm-7 col-sm-offset-0 col-md-6 col-lg-8">
-                                <h3></h3>
-                                <p></p>
-                            </div>
+
                         </div>
-                        <!-- inner row -->
                     </div>
-                    <!-- doctor -->
+                    <div class="col-md-6">
+                        <div class="image-wrapper overlay-fade-in">
+
+                            <img src="https://tourneau.scene7.com/is/image/tourneau/DEV9900004?hei=450&wid=300&fmt=png-alpha&resMode=bicub&op_sharpen=1" />
+
+                            <div class="image-overlay-content">
+                                <h2>.overlay-fade-in</h2>
+                                <p class="price">$99.99</p>
+                                <a href="#" class="button">Get it</a>
+                            </div>
+
+                        </div>
+                    </div>
+
 
                 </div>
                 <!-- outter row -->
             </div>
             <!-- content container -->
         </div>
-        <!-- staff page -->
+        <!-- project page -->
 
-        <div id="testimonials" class="page">
+        <div id="contact" class="page">
             <div class="content container-fluid">
                 <h2></h2>
                 <div class="row">
@@ -174,7 +204,11 @@
                         </div>
                     </blockquote>
                     <blockquote class="col-sm-6">
-
+                        <div class="quote">
+                            <span class="intro">asdfasdfasd</span>
+                            <span class="more">asdfasd</span>
+                            <span class="customer">asdfasdfasdf</span>
+                        </div>
                     </blockquote>
 
                 </div>
@@ -183,7 +217,7 @@
             </div>
             <!-- content container -->
         </div>
-        <!-- testimonials page -->
+        <!-- contact page -->
     </div>
     <!-- main -->
     <footer>
@@ -222,7 +256,14 @@
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 
+
+
+
+<script src="js/smooth-scroll.min.js"></script>
+
 <script src="js/jquery.mb.YTPlayer.js"></script>
+
+<script src="js/jquery.waypoints.min.js"></script>
 
 <script src="js/myscript.js"></script>
 

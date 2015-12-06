@@ -119,20 +119,11 @@ header .inbody .navbar-brand {
     margin-left: 10px;
 }
 
-header .inbody .navbar-brand h1 {
-    font-size: 1.1em;
-    padding-left: 38px;
-}
-
-header .inbody .navbar-brand sapn.subhead {
-    display: none;
-}
-
 
 /** Video background **/
 
 .content-section .video-section {
-    max-height: 500px;
+    max-height: 800px;
     padding: 110px 0 32px;
     position: relative;
 }
@@ -140,8 +131,12 @@ header .inbody .navbar-brand sapn.subhead {
 .video-section .pattern-overlay {
     background-color: rgba(71, 71, 71, 0.59);
     padding: 110px 0 32px;
-    min-height: 712px;
+    min-height: 700px;
     /* Incase of overlay problems just increase the min-height*/
+}
+
+.content-section iframe {
+    max-height: 800px;
 }
 
 .video-section h2,
@@ -182,15 +177,16 @@ header .inbody .navbar-brand sapn.subhead {
     height: 35px;
     margin: 10px auto;
 }
+
 a.ghost {
-    margin-top:200px;
+    margin-top: 200px;
     font-family: "Roboto Slab", sans-serif;
     color: white;
     border: 1px solid #f5f5f5;
+    border-radius: 5px;
     display: block;
     left: 43%;
-   
-    padding:10px;
+    padding: 10px;
     text-align: center;
     text-decoration: none;
     -webkit-transition: color 0.3s ease-out, background-color 0.3s ease-out;
@@ -200,13 +196,13 @@ a.ghost {
 a.ghost:hover,
 a.ghost:focus {
     background-color: rgba(255, 255, 255, .2);
-    color: #000;
+    color: #fff;
     transition: color 0.3s ease-in, background-color 0.3s ease-in;
     -webkit-transition: color 0.3s ease-in, background-color 0.3s ease-in;
 }
 
 
-/** Page **/
+/** Page Education**/
 
 .page {
     padding: 50px 0px;
@@ -218,14 +214,16 @@ a.ghost:focus {
 }
 
 #aboutme {
-    background-color: #e4d29d;
-    background-image: linear-gradient(to bottom, #eef08a, #819a2d);
-    border-top: 20px solid rgba(238, 200, 86, .5);
+    background-color: #fff;
 }
 
 .education {
     margin: 20px 0;
     text-align: center;
+}
+
+#educations {
+    background-color: #F7F9F9;
 }
 
 #educations img.icon {
@@ -246,44 +244,127 @@ a.ghost:focus {
 }
 
 
-/** Page staff **/
+/** Page projects **/
 
-#staff {
-    background-color: #e4d29d;
-    background-image: linear-gradient(to bottom, #4d29d, #cdae50);
+#projects {
+    background-color: #202722;
 }
 
-.doctor {
+.project {
     margin: 10px 0;
 }
 
-.doctor h3 {
+.project h3 {
     font-weight: 600;
     font-size: 1.2em;
     color: #6f4e36;
     padding-bottom: 5px;
 }
 
-.doctor p {
+.project p {
     font-size: .8em;
 }
 
-.doctor img {
+.image-wrapper {
     width: 100%;
+    height: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.04);
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    border-radius: 4px;
+}
+
+.image-overlay-content {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+}
+
+.overlay-fade-in p {
+    letter-spacing: 0.15em;
+    color: #f4f4f4;
+    font-size: 28px;
+    opacity: 0;
+    transition: all 0.2s linear;
+}
+
+.overlay-fade-in img {
+    transition: all 0.2s linear;
+    max-height: 400px;
+    margin-top:50px;
+}
+
+.overlay-fade-in .image-overlay-content {
+    opacity: 0;
+    background-color: rgba(0, 0, 0);
+    transition: all 0.4s ease-in-out;
+}
+
+.overlay-fade-in h2 {
+    color: #f2f2f2;
+    font-size: 1.8rem;
+    margin-top: 40%;
+    opacity: 0;
+    transition: all 0.2s ease-in-out;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.overlay-fade-in .button {
+    display: inline-block;
+    text-decoration: none;
+    padding: 7px 14px;
+    background: #FFF;
+    color: #222;
+    text-transform: uppercase;
+    box-shadow: 0 0 1px #000;
+    position: relative;
+    border: 1px solid #999;
+    opacity: 0;
+    transition: all 0.2s ease-in-out;
+}
+
+.overlay-fade-in .button:hover {
+    box-shadow: 0 0 5px #000;
+}
+
+.overlay-fade-in:hover img {
+    transform: scale(1.2);
+}
+
+.overlay-fade-in:hover .image-overlay-content {
+    opacity: 1;
+}
+
+.overlay-fade-in:hover h2,
+.overlay-fade-in p,
+.overlay-fade-in .button {
+    opacity: 1;
+}
+
+.overlay-fade-in:hover p {
+    transition-delay: 0.1s;
+}
+
+.overlay-fade-in:hover .button {
+    transition-delay: 0.2s;
 }
 
 
-/** Page Testimonials **/
+/** Page Contact **/
 
-#testimonials {
+#contact {
     padding: 0;
 }
 
-#testimonials h2 {
+#contact h2 {
     display: none;
 }
 
-#testimonials blockquote {
+#contact blockquote {
     background-color: rgba(255, 255, 255, .6);
     margin: 0;
     border-left: none;
@@ -291,7 +372,7 @@ a.ghost:focus {
     position: relative;
 }
 
-#testimonials blockquote .quote {
+#contact blockquote .quote {
     background-color: rgba(255, 255, 255, .6);
     padding: 20px 5%;
     position: absolute;
@@ -301,7 +382,7 @@ a.ghost:focus {
     border-radius: 0 50px 0 0;
 }
 
-#testimonials blockquote .quote:hover {
+#contact blockquote .quote:hover {
     background-color: rgba(239, 240, 196, .9);
 }
 
@@ -309,7 +390,7 @@ a.ghost:focus {
 /** Footer **/
 
 footer {
-    background: #586d74;
+    background: #EDEDEA;
     color: white;
     font-size: .8em;
     padding: 20px 0 40px 0;
