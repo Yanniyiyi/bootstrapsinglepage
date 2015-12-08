@@ -1,6 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800|Roboto+Slab:400,100,300,700);
 body {
-    font-family: "Roboto Slab", sans-serif;
+    font-family: "Open Sans", sans-serif;
     font-weight: 300;
     font-size: 2em;
     position: relative;
@@ -36,14 +36,14 @@ header .navbar-default .navbar-nav a {
 }
 
 header .navbar-default .navbar-nav a:hover {
-    color: #EEC856;
+    color: #14A3A0;
 }
 
 header .navbar-default .navbar-nav .active a {
     font-weight: 700;
-    color: #EEC856;
+    color: #14A3A0;
     background-color: transparent;
-    border-bottom: 4px solid #eec856;
+    border-bottom: 4px solid #14A3A0;
     text-shadow: none;
 }
 
@@ -99,7 +99,7 @@ header .navbar-default .navbar-toggle .icon-bar {
 /** Navbar inbody **/
 
 header .inbody {
-    background: rgba(104, 73, 49, .9);
+    background: RGBA(34, 34, 34, 1);
 }
 
 header .navbar.inbody {
@@ -170,12 +170,33 @@ header .inbody .navbar-brand {
     font-size: 1px;
 }
 
-.divider {
-    background-image: url(../img/divider.png);
+.namecontainer {
+    padding-bottom: 40px;
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-top: 40px;
+}
+
+.name {
+    border-bottom-color: rgba(255, 255, 255, 0.34902);
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    color: rgb(255, 255, 255);
+    font-size: 63px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.namesubcontent {
+    color: rgb(255, 255, 255);
     display: block;
-    width: 300px;
-    height: 35px;
-    margin: 10px auto;
+    font-size: 28px;
+    font-weight: 200;
+    margin-bottom: 15px;
+    text-align: center;
 }
 
 a.ghost {
@@ -202,52 +223,140 @@ a.ghost:focus {
 }
 
 
-/** Page Education**/
+/** Page **/
 
 .page {
     padding: 50px 0px;
 }
 
+.page hr {
+    border: 1px solid #14A3A0;
+    opacity: 0.4;
+    padding-right: 50px;
+    padding-left: 50px;
+}
+
 .page h2 {
     text-align: center;
     margin-bottom: 30px;
+    color: #14A3A0;
+    font-size: 54px;
+    font-weight: 300;
+    height: 59px;
+    line-height: 59.4px;
 }
+
+.page .lead {
+    color: rgb(114, 120, 120);
+    font-size: 21px;
+    font-weight: 300;
+    line-height: 29.4px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.page .row {
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+
+/** Page profile **/
 
 #aboutme {
     background-color: #fff;
 }
 
-.education {
+#aboutme .row {
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+#aboutme h3 {
+    color: rgb(34, 163, 159);
+    font-size: 28px;
+    font-weight: 300;
+    height: 30px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+#aboutme span {
+    color: rgb(67, 66, 66);
+    font-size: 15px;
+    font-weight: bold;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+
+/** Page educations **/
+
+#educations h3,
+h4 {
+    color: rgb(67, 66, 66);
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.skill {
     margin: 20px 0;
     text-align: center;
 }
 
 #educations {
-    background-color: #F7F9F9;
+    background-color: #F3EFDF;
 }
 
-#educations img.icon {
+#educations .row {
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+#skills img.icon {
     display: block;
     width: 80px;
     margin: 0 auto;
     margin-bottom: 5px;
 }
 
-#educations h3 {
+#skills h3 {
     margin-bottom: 10px;
 }
 
 @media only screen and(min-width:450px) and(max-width:768px) {
-    .education p {
+    .skill p {
         padding: 0 20%;
     }
 }
 
 
+/** Page abilities **/
+#abilities {
+    text-align: left;
+}
+
+#abilities .col-md-6, #abilities ul{
+    padding-left:0;
+}
+
+#abilities ul li{
+    list-style-type: none;
+}
+
+#abilities .ability-title {
+    color: rgb(67, 66, 66);
+    font-size: 15px;
+}
+
+
+
 /** Page projects **/
 
 #projects {
-    background-color: #202722;
+    background-color: #F3EFDF;
 }
 
 .project {
@@ -257,7 +366,6 @@ a.ghost:focus {
 .project h3 {
     font-weight: 600;
     font-size: 1.2em;
-    color: #6f4e36;
     padding-bottom: 5px;
 }
 
@@ -268,7 +376,6 @@ a.ghost:focus {
 .image-wrapper {
     width: 100%;
     height: 100%;
-    border: 1px solid rgba(0, 0, 0, 0.04);
     overflow: hidden;
     position: relative;
     text-align: center;
@@ -295,7 +402,7 @@ a.ghost:focus {
 .overlay-fade-in img {
     transition: all 0.2s linear;
     max-height: 400px;
-    margin-top:50px;
+    margin-top: 50px;
 }
 
 .overlay-fade-in .image-overlay-content {
@@ -357,73 +464,57 @@ a.ghost:focus {
 /** Page Contact **/
 
 #contact {
-    padding: 0;
-}
-
-#contact h2 {
-    display: none;
-}
-
-#contact blockquote {
-    background-color: rgba(255, 255, 255, .6);
-    margin: 0;
-    border-left: none;
-    min-height: 500px;
-    position: relative;
-}
-
-#contact blockquote .quote {
-    background-color: rgba(255, 255, 255, .6);
-    padding: 20px 5%;
-    position: absolute;
-    bottom: 0;
-    width: 75%;
-    font-weight: 400;
-    border-radius: 0 50px 0 0;
-}
-
-#contact blockquote .quote:hover {
-    background-color: rgba(239, 240, 196, .9);
-}
-
-
-/** Footer **/
-
-footer {
-    background: #EDEDEA;
-    color: white;
+    background: #434242;
     font-size: .8em;
     padding: 20px 0 40px 0;
+    text-align: center;
+    color:#fff;
 }
 
-footer a {
-    color: #e06eae;
+#contact a{
+    color:#fff;
 }
 
-footer a:hover {
-    color: #eec856 !important;
+
+#contact h3 {
+    margin-top: 20px;
 }
 
-footer .navbar {
-    margin-bottom: 0;
-    min-height: 0;
+#contact .col-md-6{
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
-footer .navbar-default {
-    background: transparent;
-    border: none;
-    margin-right: 40px;
+.bot-hr{
+    margin-bottom: 200px;
 }
 
-footer .navbar-nav>li a {
-    padding-top: 0;
-    padding-bottom: 0;
-    text-decoration: underline;
-    color: #eec856 !important;
+
+.circle-icon {
+    background: none;
+    border: 3px solid #14A3A0;
+    border-radius: 50%;
+    box-sizing: content-box;
+    color: #14A3A0;
+    display: inline-block;
+    font-size: 3.42857rem;
+    height: 3.42857rem;
+    padding: 30px;
+    width: 3.42857rem;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    opacity: 0.5;
 }
 
-footer .phone {
-    font-size: 1.4em;
-    font-weight: 700;
-    color: #e06ae;
+.circle-icon:hover {
+    color: #14A3A0;
+    -webkit-transform: scale(1.3);
+    -ms-transform: scale(1.3);
+    transform: scale(1.3);
+    box-shadow: 1px 1px #14A3A0, 2px 2px #14A3A0, 3px 3px #14A3A0;
+    -webkit-transform: translateX(-3px);
+    transform: translateX(-3px);
+    opacity: 1;
 }

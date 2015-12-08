@@ -10,8 +10,12 @@
 
     <link rel="stylesheet" href="css/animate.css">
 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
     <link rel="stylesheet" href="css/style.css">
+
     <script src="js/prefixfree.min.js"></script>
+
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
 </head>
@@ -37,10 +41,13 @@
                             <a href="#featured">Home</a>
                         </li>
                         <li>
-                            <a href="#aboutme">About me</a>
+                            <a href="#aboutme">Profile</a>
                         </li>
                         <li>
-                            <a href="#educations">Education</a>
+                            <a href="#educations">Educations</a>
+                        </li>
+                        <li>
+                            <a href="#abilities">Abilities</a>
                         </li>
                         <li>
                             <a href="#projects">Projects</a>
@@ -59,12 +66,15 @@
         <div class="content-section video-section" id="featured">
             <div class="pattern-overlay container-fluid">
                 <div class="row">
-                    <div class="col-lg-12">
-                        <a id="bgndVideo" class="player" data-property="{videoURL:'https://www.youtube.com/watch?v=43ngkc2Ejgw',containment:'.video-section', quality:'large', autoPlay:true, mute:true, opacity:1}">bg</a>
-                        <h2 class="header-content"><strong class="greeting">
-                            Hi, </strong>I’m Yi Yang. It's nice to meet you.</h2>
-                        <div class="divider header-content"></div>
-                        <h3 class="header-content">I like to Code and I am looking for a job now.</h3>
+                    <div class="col-lg-12 col-md-12 col-sm-12">
+                        <a id="bgndVideo" class="player" data-property="{videoURL:'https://www.youtube.com/watch?v=43ngkc2Ejgw',containment:'.video-section', quality:'large', autoPlay:true, mute:true, opacity:1}"></a>
+                        <div class="namecontainer">
+                            <h2 class="name">Yi Yang</h2>
+                            <p class="namesubcontent">
+                                Interactive Resume
+                            </p>
+                        </div>
+
                         <div class="row">
                             <div class="col-md-2 col-md-offset-5 col-sm-6 col-sm-offset-3 col-xs-6 col-xs-offset-3"><a href="#aboutme" class="ghost header-content">Hire me?</a></div>
                         </div>
@@ -79,18 +89,27 @@
 
         <div class="page " id="aboutme">
             <div class="content container">
-                <h2>About me</h2>
+                <h2>Profile</h2>
+                <p class="lead">
+                    "Be yourself; everyone else is already taken."
+                </p>
+
                 <div class="row">
-                    <p class="col-md-5 col-md-offset-1"></p>
-                    <p class="col-md-5">Hi, I am Yi Yang, a graduate of Monash University.</p>
-                </div>
-                <div class="row">
-                    <p class="col-md-5 col-md-offset-1"></p>
-                    <p class="col-md-5">Hi, I am Yi Yang, a graduate of Monash University.</p>
-                </div>
-                <div class="row">
-                    <p class="col-md-5 col-md-offset-1"></p>
-                    <p class="col-md-5">Hi, I am Yi Yang, a graduate of Monash University.</p>
+                    <hr>
+                    <div class="col-md-4">
+                        <h3>About me</h3>
+                        <p>I am a web developer. I am a junior programmer with good knowledge of web develop techniques. I love structure and order and I also stand for quality. I love spending time on learning new skills and fixing problems. Also I like working in a team, so I can learn faster and more.</p>
+                    </div>
+                    <div class="col-md-4"></div>
+                    <div class="col-md-4">
+                        <h3>Details</h3>
+                        <span>Name:</span>
+                        <p>Yi Yang</p>
+                        <span>Age:</span>
+                        <p>25</p>
+                        <span>Location:</span>
+                        <p>3/17 Shepparson Avenue Carnegie VIC</p>
+                    </div>
                 </div>
 
 
@@ -101,39 +120,129 @@
 
         <div class="page" id="educations">
             <div class="content container">
-                <h2>Education</h2>
+                <h2>Educations</h2>
+                <p class="lead">
+                    "Be the change that you wish to see in the world"
+                </p>
+
+
                 <div class="row">
-                    <article class="element-to-animate animated education col-md-6 col-sm-6 col-xs-12">
-                        <img src="" alt="">
-                        <h1>Monash University(2014-2015)</h1>
-                        <h3>What I got:</h3>
-                        <ul>
-                            <li>Faculty of Information Technology International Merit Scholarship</li>
-                            <li>Highest result in Java foundation unit</li>
-                        </ul>
-                        <p></p>
-                    </article>
-                    <article class="education col-md-6 col-sm-6 col-xs-12 element-to-animate animated">
-                        <img src="" alt="">
-                        <h1>Chang'an University(2009-2013)</h1>
-                        <h3>What I did:</h3>
-                        <ul>
-                            <li>Class monitor for 4 years</li>
-                        </ul>
-                        <p></p>
-                    </article>
+                    <hr>
+                    <div class="col-md-4">
+                        <h3>Monash University</h3>
+                        <p>2014 - 2015</p>
+                    </div>
+                    <div class="col-md-8">
+                        <h4>
+                        Master of Information Technology</h4>
+                        <p>
+                            What I got:
+                        </p>
+                        <p>
+                            Highest resutl in Java foundation unit
+                        </p>
+                        <p>
+                            Faculty of Information Technology International Merit Scholarship
+                        </p>
+                    </div>
                 </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <h3>Chang'an University</h3>
+                        <p>2009 - 2013</p>
+                    </div>
+                    <div class="col-md-8">
+                        <h4>Bachelor of Software Engineering</h4>
+                        <p>
+                            It's too sad to recall the past. Because in my bachelor degree, due to my naïveté, I did not study hard.
+                        </p>
+                    </div>
+                </div>
+
+
                 <!-- row -->
 
             </div>
             <!-- content container-->
         </div>
-        <!--service page-->
 
+
+        <div id="abilities" class="page">
+            <div class="content container">
+                <h2>Abilities</h2>
+                <p class="lead">"You only live once, but if you do it right, once is enough."</p>
+                <div class="row">
+                    <hr>
+                    <h3>Skills</h3>
+                    <div class="col-md-6">
+                        <ul>
+                            <li>
+                                <span class="ability-title">HTML</span>
+                                <span>Beginner</span>
+                            </li>
+                            <li>
+                                <span class="ability-title">Javascript</span>
+                                <span>Beginner</span>
+                            </li>
+                            <li>
+                                <span class="ability-title">CSS</span>
+                                <span>Beginner</span>
+                            </li>
+                            <li>
+                                <span class="ability-title">jQuery</span>
+                            </li>
+                            <li>
+                                <span class="ability-title">Bootstrap</span>
+                                <span>Beginner</span>
+                            </li>
+                            <li>
+                                <span class="ability-title">JSON</span>
+                                <span>Beginner</span>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <ul>
+                            <li>
+                                <span class="ability-title">SQL</span>
+                                <span>Beginner</span>
+                            </li>
+                            <li>
+                                <span class="ability-title">Laravel</span>
+                                <span>Beginner</span>
+                            </li>
+                            <li>
+                                <span class="ability-title">MVC Pattern</span>
+                                <span>Beginner</span>
+                            </li>
+                            <li>
+                                <span class="ability-title">Java</span>
+                                <span>Beginner</span>
+                            </li>
+                            <li>
+                                <span class="ability-title">Obejct Orientated Programming</span>
+                                <span>Beginner</span>
+                            </li>
+                            <li>
+                                <span class="ability-title">PHP</span>
+                                <span>Beginner</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!--service page-->
         <div id="projects" class="page">
             <div class="content container-fluid">
-                <h2 id="myprojects">Recent works</h2>
+                <h2>Recent works</h2>
+                <p class="lead">
+                    "You can do anything you set your mind to."
+                </p>
                 <div class="row">
+                    <hr>
                     <div class="col-md-6">
                         <div class="image-wrapper overlay-fade-in">
 
@@ -176,9 +285,8 @@
                             <img src="https://tourneau.scene7.com/is/image/tourneau/DEV9900004?hei=450&wid=300&fmt=png-alpha&resMode=bicub&op_sharpen=1" />
 
                             <div class="image-overlay-content">
-                                <h2>.overlay-fade-in</h2>
-                                <p class="price">$99.99</p>
-                                <a href="#" class="button">Get it</a>
+                                <h2>Next one</h2>
+                                <p class="price">Coming soon...</p>
                             </div>
 
                         </div>
@@ -192,62 +300,32 @@
         </div>
         <!-- project page -->
 
+
+        <!-- main -->
         <div id="contact" class="page">
             <div class="content container-fluid">
-                <h2></h2>
+                <h2>Contact me</h2>
+                <p class="lead">"Don't cry because it's over, smile because it happened."</p>
                 <div class="row">
-                    <blockquote class="col-sm-6">
-                        <div class="quote">
-                            <span class="intro">asdfasdfasd</span>
-                            <span class="more">asdfasd</span>
-                            <span class="customer">asdfasdfasdf</span>
-                        </div>
-                    </blockquote>
-                    <blockquote class="col-sm-6">
-                        <div class="quote">
-                            <span class="intro">asdfasdfasd</span>
-                            <span class="more">asdfasd</span>
-                            <span class="customer">asdfasdfasdf</span>
-                        </div>
-                    </blockquote>
-
+                    <hr>
+                    <div class="col-md-6">
+                        <i class="fa fa-envelope-o fa-4x circle-icon"></i>
+                        <h3>Email</h3>
+                        <a href="mailto:yiyang9110@gmail.com">yiyang9110@gmail.com</a>
+                    </div>
+                    <div class="col-md-6">
+                        <i class="fa fa-phone fa-4x circle-icon"></i>
+                        <h3>Phone</h3>
+                        <p>+61(0)452624473</p>
+                    </div>
+                    <hr class="bot-hr">
                 </div>
-                <!--row -->
-
+                <!-- row -->
             </div>
             <!-- content container -->
         </div>
-        <!-- contact page -->
     </div>
-    <!-- main -->
-    <footer>
-        <div class="content container-fluid">
-            <div class="row">
-                <div class="col-sm-6">
-                    <p><span></span></p>
-                    <p>
-                        <a href=""></a>
-                    </p>
-                </div>
-                <!-- col -->
-                <div class="col-sm-6">
-                    <nav class="navbar navbar-default" role="navigation">
-                        <ul class="nav navbar-nav navbar-right">
-                            <li>
-                                <a href="">Home</a>
-                            </li>
-                            <li>
-                                <a href="">Home</a>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
-                <!-- col -->
-            </div>
-            <!-- row -->
-        </div>
-        <!-- content container -->
-    </footer>
+
 </body>
 
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
