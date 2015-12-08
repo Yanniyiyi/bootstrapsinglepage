@@ -401,10 +401,8 @@ h4 {
 
 .overlay-fade-in img {
     transition: all 0.2s linear;
-    max-height: 400px;
     margin-top: 50px;
      max-width: 100%;
-    height: auto;
 }
 
 .overlay-fade-in .image-overlay-content {
