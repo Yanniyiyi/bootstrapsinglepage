@@ -1,4 +1,9 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800|Roboto+Slab:400,100,300,700);
+html,body{
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 body {
     font-family: "Open Sans", sans-serif;
     font-weight: 300;
@@ -53,20 +58,7 @@ header .navbar-default .navbar-nav .active a:hover {
     text-shadow: none;
 }
 
-header .navbar-brand h1 {
-    color: white;
-    margin: 0px;
-    font-size: 1.8em;
-    font-weight: 400;
-    padding-left: 105px;
-}
 
-header .navbar-brand span.subhead {
-    font-family: "Roboto Slab", sans-serif;
-    font-size: 0.6em;
-    font-weight: 100;
-    display: block;
-}
 
 
 /** Navbar brand **/
@@ -244,6 +236,7 @@ a.ghost:focus {
     font-weight: 300;
     height: 59px;
     line-height: 59.4px;
+    margin-top: 10px;
 }
 
 .page .lead {
@@ -400,7 +393,7 @@ h4 {
 }
 
 .overlay-fade-in img {
-    transition: all 0.2s linear;
+    transition: all 0.2s linear;dd
     margin-top: 50px;
      max-width: 100%;
 }
